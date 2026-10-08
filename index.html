@@ -419,7 +419,11 @@ Animation is the most honest form of telling adult stories—raw, visual, and un
 
                     <!-- Contact Form Box -->
                     <div class="glass-panel rounded-2xl p-6 sm:p-10 border border-crimson-800/40">
-                        <form id="contactForm" onsubmit="handleFormSubmit(event)" class="space-y-6">
+                        <form action="https://formsubmit.co/crimsonloom.business@gmail.com
+" method="POST" class="space-y-6">
+  <!-- Versteckte Einstellungen für FormSubmit -->
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_subject" value="Neue Anfrage über Crimson Loom Website!">
                             
                             <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                                 <!-- Name -->
@@ -427,7 +431,7 @@ Animation is the most honest form of telling adult stories—raw, visual, and un
                                     <label for="name" class="block text-xs font-medium tracking-wider text-slate-300 uppercase">
                                         Name / Firma <span class="text-crimson-500">*</span>
                                     </label>
-                                    <input type="text" id="name" required placeholder="z.B. Max Mustermann / Studio X" 
+                                    <input type="text" id="name" name="Name" required placeholder="z.B. Max Mustermann / Studio X" 
                                         class="w-full px-4 py-3 rounded-xl bg-black/60 border border-crimson-900/50 focus:border-crimson-500 focus:ring-1 focus:ring-crimson-500 text-slate-100 placeholder-slate-600 text-sm outline-none transition-all">
                                 </div>
 
@@ -436,7 +440,7 @@ Animation is the most honest form of telling adult stories—raw, visual, and un
                                     <label for="email" class="block text-xs font-medium tracking-wider text-slate-300 uppercase">
                                         E-Mail-Adresse <span class="text-crimson-500">*</span>
                                     </label>
-                                    <input type="email" id="email" required placeholder="deine-email@domain.com" 
+                                    <input type="email" id="email" name="Email" required placeholder="deine-email@domain.com" 
                                         class="w-full px-4 py-3 rounded-xl bg-black/60 border border-crimson-900/50 focus:border-crimson-500 focus:ring-1 focus:ring-crimson-500 text-slate-100 placeholder-slate-600 text-sm outline-none transition-all">
                                 </div>
                             </div>
